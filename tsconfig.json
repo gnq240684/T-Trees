@@ -1,4 +1,8 @@
 {
+    "files": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
     "compilerOptions": {
         "module": "commonjs",
         "target": "es6",
