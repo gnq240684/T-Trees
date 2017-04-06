@@ -2,7 +2,7 @@
   "name": "triple-trees",
   "version": "0.0.1",
   "description": "A project for Triple Trees",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +27,16 @@
     "electron": "^1.6.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.2",
+    "@types/gulp-sourcemaps": "0.0.30",
+    "@types/gulp-typescript": "^0.0.33",
+    "@types/typescript": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-typescript": "^3.1.6",
+    "typescript": "^2.2.2"
   }
 }
