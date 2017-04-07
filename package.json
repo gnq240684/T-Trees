@@ -33,11 +33,12 @@
     "@types/gulp": "^4.0.2",
     "@types/gulp-sourcemaps": "0.0.30",
     "@types/gulp-typescript": "^0.0.33",
-    "@types/typescript": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-sourcemaps": "^2.5.1",
     "gulp-typescript": "^3.1.6",
-    "typescript": "^2.2.2"
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack-stream": "^3.2.0"
   }
 }
