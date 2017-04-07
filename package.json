@@ -2,7 +2,7 @@
   "name": "triple-trees",
   "version": "0.0.1",
   "description": "A project for Triple Trees",
-  "main": "dist/main.js",
+  "main": "dist/main/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,6 +33,7 @@
     "@types/gulp": "^4.0.2",
     "@types/gulp-sourcemaps": "0.0.30",
     "@types/gulp-typescript": "^0.0.33",
+    "electron-connect": "^0.6.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-sourcemaps": "^2.5.1",
