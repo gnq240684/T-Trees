@@ -7,10 +7,17 @@ const config = {
     module: {
         loaders: [
             {
-                test: /\.tsx?$/,
-                loader: 'ts-loader'
+                test: /\.ts(x?)$/,
+                loader: 'babel-loader'
+            },
+            {
+                test: /\.less$/,
+                loader: 'style!css!less'
             }
         ]
+    },
+    resolve: {
+        extensions: [ '', '.ts', '.tsx', '.js', '.jsx']
     }
 }
 module.exports = config

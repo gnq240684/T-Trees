@@ -8,7 +8,7 @@ var webpackConfig = require('./webpack.config.js')
 var tsProject = ts.createProject('tsconfig.json')
 
 gulp.task('compile:main', function() {
-    var tsResult = gulp.src(['src/main/**/*.ts', 'src/main/**/*.tsx'])
+    var tsResult = gulp.src(['src/main/**/*.ts', 'src/main/**/*.tsx', 'src/common/protocols/**/*.ts'])
         .pipe(sourcemaps.init())
         .pipe(tsProject())
     return tsResult
@@ -17,7 +17,11 @@ gulp.task('compile:main', function() {
 })
 
 gulp.task('compile:render', function() {
-    var tsResult = gulp.src(['src/view/**/*.ts', 'src/view/**/*.tsx'])
+    var tsResult = gulp.src([
+            'src/view/**/*.ts',
+            'src/view/**/*.tsx',
+            'src/common/protocols/**/*.ts'
+            ])
         .pipe(webpack(webpackConfig))
     return tsResult
         .pipe(gulp.dest('dist/view/'))
